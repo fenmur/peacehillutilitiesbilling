@@ -8,10 +8,33 @@ body {
     padding: 0;
 }
 
+header {
+
+    position: relative;
+    background-color:#fff;
+    padding: 30px;
+    border-bottom: 5px solid #004c99;
+}
+
+/*Logo*/
+
+ .logo {
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 150px;
+
+ }
+
+
+ /*Banner Section*/
+
 #banner {
 
     position: relative;
 	background-color: #ffffff;
+    background-image: url("images/bannerphoto.jpg"), url("images/overlay.png");
 	background-position: top left, top left, center center;
 	background-repeat: repeat, repeat, no-repeat;
 	background-size: auto, auto, cover;
@@ -28,12 +51,57 @@ body {
 	text-align: center;
 	margin: 0;
 	padding: 4em 0 3.5em 0;
-		}
+	}
 
-#banner .content h2 {
+#banner h2 {
 	color: #fff;
 	font-size: 2.75em;
 	margin: 0 0 0.5em 0;
 	}
 
+.button-container {
 
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+
+}
+
+.btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    gap: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.btn i {
+
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.btn:hover {
+
+    background-color: #004c99;
+    box-shadow: 0 0 20px rgba(3, 179, 254, 0.5);
+}
+
+.btn span {
+
+    font-size: 16px;
+    color:#f4f4f4;
+    margin-top: 10px;
+    display: block;
+}
